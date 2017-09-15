@@ -22,12 +22,12 @@ div.wrapper {
     width:1000px;
     margin:auto;
 }
-
+/* Stukje tekst */
 article {
-    /* Stukje tekst */
     float:left;
     width:49%;
     margin-right:2%;
+    margin-top:30px;
 }
 /* De tabel */
 table {
