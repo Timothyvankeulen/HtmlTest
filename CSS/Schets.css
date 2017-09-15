@@ -1,0 +1,51 @@
+body {
+    /* lettertypen van alle teksten binnen de body */
+    font-family:"Arial", "sans-serif";
+}
+
+nav {
+    margin-top:20px;
+    background-color: black;
+    padding:10px;
+}
+
+nav a {
+    /* Navigatie menu met witte letters */
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+    padding-right:5px;
+    border-right: 2px solid white;
+}
+
+div.wrapper {
+    width:1000px;
+    margin:auto;
+}
+
+article {
+    /* Stukje tekst */
+    float:left;
+    width:49%;
+    margin-right:2%;
+}
+/* De tabel */
+table {
+    border:1px solid black;
+    border-collapse: collapse;
+    margin-top:30px;
+    width:49%;
+}
+
+td {
+    padding: 10px;
+    border:1px solid black;
+}
+
+td.groen {
+    background-color:limegreen;
+}
+
+td.blauw {
+    background-color:dodgerblue;
+}
