@@ -1,0 +1,75 @@
+
+* {
+    box-sizing: border-box;
+}
+
+div#wrapper, footer {
+    margin:auto;
+    width:1000px;
+    background-color:rgb(251, 235, 235);
+    padding:20px;
+}
+
+body {
+    /* Tekst in de body met een ander lettertype */
+    font-family:"Arial","sans-serif";
+}
+/* Navigatie menu */
+nav {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+nav a {
+    margin-right:20px;
+}
+/* Section met de classes appel en visuals (verwijst naar html)*/
+section.appel, section.visuals {
+    width:50%;
+    float:left;
+}
+/* Section laat visuals rechts aansluiten */
+section.visuals {
+    text-align:right;
+}
+/* Section met teksen (articles) */
+section.articles {
+}
+
+img.appel {
+    width:470px;
+    height:335px;
+}
+
+img.visuals {
+    width:480px;
+    margin-bottom:4px;
+}
+/* image in de articles die 10 pixels van de bovenkant
+   en 10 pixels aan de onderkant ophogen */
+img.articles {
+    margin-top:10px;
+    margin-bottom:10px;
+    width:308px;
+}
+
+article {
+    display:inline-block;
+    width:33%;
+    padding-right:10px;
+    vertical-align:top;
+    line-height:25px;
+}
+/* Laatste article van de groep article */
+article:last-child {
+    padding-right:0px;
+}
+
+footer {
+    background-color:rgb(166, 166, 166);
+    color:white;
+}
+
+footer a {
+    color:white;
+}
