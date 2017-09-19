@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-
-        *{
-            box-sizing: border-box;
-        }
-
-        div {
-            width:100px;
-            height:100px;
-            border:50px solid black;
-            background-color: red;
-            padding:50px;
-        }
-
-        div.small {
-            background-color: forestgreen;
-            border:none;
-            padding:0px;
-        }
-    </style>
+    <head>
+        <meta charset="UTF-8">
+        <title>Burton Education</title>
+        <link rel="stylesheet" type="text/css" href="CSS/Burton.css">
     </head>
     <body>
-    <div></div>
-    <div class="small"></div>
+        <div id="wrapper">
+            <header>
+                <!-- Een image in de header -->
+                <img src="img/Burton%20Images/burton_logo.png" alt="logo burton education">
+            </header>
+            <!-- Navigatie menu -->
+            <nav>
+                <a href="">Over ons</a>
+                <a href="">Producten</a>
+                <a href="">Contact</a>
+            </nav>
+            <!-- Section met 1 image -->
+            <section class="appel">
+                <img class="appel" src="img/Burton%20Images/appel.jpg" alt="Visual appel">
+            </section>
+            <!-- Section met 3 images -->
+            <section class="visuals">
+                <img class="visuals" src="img/Burton%20Images/bus.jpg" alt="School bus">
+                <img class="visuals" src="img/Burton%20Images/desk.jpg" alt="Klok">
+                <img class="visuals" src="img/Burton%20Images/pythagoras.jpg" alt="School bord">
+            </section>
+            <!-- Section met 3 articles -->
+            <section class="articles">
+                <h1>Donec interdum molestie est</h1>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> <br>
+                    Morbi gravida varius dolor eu vestibulum. Ut consectetur velit et tellus pretium facilisis.
+                    Vestibulum interdum tellus nec dui porttitor posuere. <br><br>
+                    Nunc euismod sit amet mauris quis condimentum.
+                    Vestibulum diam tortor, pellentesque nec tincidunt ac, tristique quis quam.
+                </article>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi gravida varius dolor eu vestibulum. <br>
+                    <img class="articles" src="img/Burton%20Images/football.jpg" alt="Football">
+                    Ut consectetur velit et tellus pretium facilisis.
+                    Vestibulum interdum tellus nec dui porttitor posuere. Nunc euismod sit amet mauris quis condimentum.
+                    Vestibulum diam tortor, pellentesque nec tincidunt ac, tristique quis quam.
+                </article>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi gravida varius dolor eu vestibulum. Ut consectetur velit et tellus pretium facilisis.
+                    Vestibulum interdum tellus nec dui porttitor posuere. Nunc euismod sit amet mauris quis condimentum.
+                    Vestibulum diam tortor, pellentesque nec tincidunt ac, tristique quis quam.
+                    <img class="articles" src="img/Burton%20Images/book.jpg" alt="Book">
+                </article>
+            </section>
+        </div> <!-- Wrapper -->
+        <footer>
+            <a href="">Over ons</a><br>
+            <a href="">Producten</a><br>
+            <a href="">Contact</a><br><br>
+            Copyright &copy; 2016
+        </footer>
     </body>
 </html>
