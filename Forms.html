@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burton Education</title>
+
+    <!-- Style van css -->
+    <style>
+        /* Sections */
+        section.left {
+            float:left;
+            width:400px;
+        }
+
+        section.right{
+            float:left;
+            width:400px;
+        }
+
+        /* form ul/li */
+        form ul {
+            list-style-type:none;
+            padding:0;
+        }
+        form ul li {
+            padding:10px;
+        }
+        form ul li input {
+            float:right;
+        }
+
+        /* inputs */
+        input#man, label#man {
+            float:none;
+            margin-left:145px;
+        }
+        input#vrouw, label#vrouw {
+            float:none;
+        }
+
+        input#lekkereten {
+            float:none;
+        }
+
+        li label #vrouw{
+            margin-left:100px;
+        }
+
+        /* Select box */
+        select {
+            margin-left:130px;
+        }
+
+        input#geboortedatum {
+            float:right;
+            margin-right:30px;
+        }
+
+        textarea {
+            float:right;
+        }
+
+        #buttons {
+            float: left;
+            margin-top:183px;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+<header><h2>Voorbeeldformulier</h2></header>
+<form action="http://www.savatarian.com/html5/form.php" method="post">
+
+    <section class="left">
+    <ul>
+        <li>
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" name="voornaam" id="voornaam" required/>
+        </li>
+        <li>
+            <label for="tussenvoegsel">Tussenvoegsel:</label>
+            <input type="text" name="tussenvoegsel" id="tussenvoegsel" />
+        </li>
+        <li>
+            <label for="achternaam">Achternaam</label>
+            <input type="text" name="achternaam" id="achternaam" required/>
+        </li>
+        <li>
+            <label for="man" for="vrouw">Geslacht</label>
+            <input type="radio" name="geslacht" id="man" value="man"/>
+            Man
+            <input type="radio" name="geslacht" id="vrouw" value="vrouw"/>
+            Vrouw
+        </li>
+        <li>
+            <label for="kleurogen">Kleur ogen</label>
+            <select name="kleurogen" id="kleurogen">
+                <option>Groen</option>
+                <option>Blauw</option>
+                <option>Bruin</option>
+            </select>
+        </li>
+        <li>
+            <label for="geboortedatum">Geboortedatum</label>
+            <input type="date" name="geboortedatum" id="geboortedatum"/>
+        </li>
+        <li>
+            <label for="omschrijving">Omschrijving</label>
+            <textarea name="omschrijving" id="omschrijving" rows="5" cols="25"></textarea>
+        </li>
+    </ul>
+    </section> <!-- section left -->
+
+    <section class="right">
+        <ul>
+            <li>
+                <label for="lekkereten">Lekker Eten:</label>
+                <br>
+                <input type="checkbox" name="lekkereten" id="lekkereten" value="patat"/>
+                <span class="checkbox">Patat</span>
+                <br>
+                <input type="checkbox" name="lekkereten" id="lekkereten" value="bruine bonen"/>
+                <span class="checkbox">Bruine bonen</span>
+                <br>
+                <input type="checkbox" name="lekkereten" id="lekkereten" value="hamburger"/>
+                <span class="checkbox">Hamburger</span>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button type="reset" id="buttons">Annuleer</button>
+                <input type="submit" id="buttons" value="Oke"/>
+            </li>
+        </ul>
+    </section> <!-- section right -->
+</form>
+</body>
+</html>
